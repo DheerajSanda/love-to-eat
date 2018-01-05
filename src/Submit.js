@@ -61,7 +61,7 @@ class Submit extends Component {
 
     newRecipie.name = this.name.value;
     newRecipie.description = this.description.value;
-    newRecipie.image = this.state.uploadFileCloudinaryUrl;
+    newRecipie.image = this.state.uploadedFileCloudinaryUrl;
 
     this.setState({newRecipie});
 
@@ -80,7 +80,7 @@ class Submit extends Component {
     let newRecipie = this.state.newRecipie;
     newRecipie.ingredients.push({quantity: quantity, ingredient: ingredient});
     this.setState({newRecipie: newRecipie});
-    console.log(newRecipie);
+    console.log('submit.js',newRecipie);
   }
 
   render(){
